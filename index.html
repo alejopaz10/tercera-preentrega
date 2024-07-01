@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnero de la Clínica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; 
+            background-image: url(../img/general-1110x740.jpeg); 
+            background-size: cover; 
+            background-position: center; 
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px; 
+            margin: auto; 
+            background-color: #ffffff; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input, button {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: calc(50% - 10px);
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        #turnos-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Turnero de la Clínica</h1>
+
+        <label for="input-paciente">Nombre del Paciente:</label><br>
+        <input type="text" id="input-paciente"><br>
+
+        <label for="input-fecha">Fecha del Turno (DD/MM/AAAA):</label><br>
+        <input type="text" id="input-fecha"><br>
+
+        <label for="input-hora">Hora del Turno (HH:MM):</label><br>
+        <input type="text" id="input-hora"><br>
+
+        <button id="agregar-turno-btn">Agregar Turno</button>
+        <button id="mostrar-turnos-btn">Mostrar Turnos</button>
+
+        <div id="mensaje"></div>
+        <div id="turnos-container"></div>
+    </div>
+
+    <script src="index.js"></script> 
+</body>
+</html>
+
+
